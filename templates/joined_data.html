@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joined Data</title>
+</head>
+<body>
+    <h1>Joined Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Food Name</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
